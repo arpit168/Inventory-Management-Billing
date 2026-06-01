@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-900 text-dark-100 font-sans;
+}
+
+/* Base button styles */
+@layer components {
+  .btn {
+    @apply px-md py-sm rounded-md font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-dark-700 text-white hover:bg-dark-600 border border-dark-600;
+  }
+
+  .btn-success {
+    @apply btn bg-success text-white hover:bg-opacity-90;
+  }
+
+  .btn-danger {
+    @apply btn bg-error text-white hover:bg-opacity-90;
+  }
+
+  .btn-warning {
+    @apply btn bg-warning text-white hover:bg-opacity-90;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-md py-sm rounded-md bg-dark-800 text-white border border-dark-700 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50 transition-colors duration-200 placeholder-dark-400;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-dark-800 rounded-lg border border-dark-700 p-lg shadow-md;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:shadow-lg hover:border-dark-600;
+  }
+
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center px-md py-sm rounded-full text-sm font-medium;
+  }
+
+  .badge-success {
+    @apply badge bg-success bg-opacity-20 text-success;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning bg-opacity-20 text-warning;
+  }
+
+  .badge-error {
+    @apply badge bg-error bg-opacity-20 text-error;
+  }
+
+  .badge-info {
+    @apply badge bg-info bg-opacity-20 text-info;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-600 bg-opacity-20 text-primary-400;
+  }
+
+  /* Table styles */
+  .table {
+    @apply w-full text-sm;
+  }
+
+  .table th {
+    @apply px-md py-lg bg-dark-700 text-dark-100 font-semibold text-left border-b border-dark-600;
+  }
+
+  .table td {
+    @apply px-md py-md border-b border-dark-700;
+  }
+
+  .table tr:hover {
+    @apply bg-dark-700 bg-opacity-50;
+  }
+
+  /* Loading skeleton */
+  .skeleton {
+    @apply bg-gradient-to-r from-dark-700 to-dark-600 rounded-md animate-pulse;
+  }
+}
