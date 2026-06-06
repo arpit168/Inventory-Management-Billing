@@ -240,6 +240,10 @@ export const Register = () => {
                   })}
                 />
 
+
+
+                
+
                 <button
                   type="button"
                   onClick={() =>
