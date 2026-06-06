@@ -239,11 +239,6 @@ export const Register = () => {
                       'Passwords do not match',
                   })}
                 />
-
-
-
-                
-
                 <button
                   type="button"
                   onClick={() =>
