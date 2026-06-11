@@ -239,7 +239,7 @@ export const Register = () => {
                       'Passwords do not match',
                   })}
                 />
-                <button
+                 <button
                   type="button"
                   onClick={() =>
                     setShowConfirmPassword(
@@ -288,3 +288,6 @@ export const Register = () => {
 };
 
 export default Register;
+
+
+
